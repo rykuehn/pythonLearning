@@ -62,3 +62,43 @@ menu = "Our available flavors are: {}.".format(display_menu);
 
 #index
 "alpha".index('a');
+
+##booleans
+bool(True);
+bool([]);
+bool([1, 2, 3]);
+bool(None);
+
+5 == 5
+5 != 7
+5 < 7
+7 >= 5
+
+5 is 5
+"a" is "b"
+# is checks if they are in the same place in memory
+# handy for checking if something is none
+#checks if a num is none or falsey
+
+c = [];
+d = [];
+
+c == d #true
+c is d #false
+
+#IF AND ELSE STATEMENTS
+age = 5000;
+if age > 1000:
+  print("wow")
+elif age >= 5000:
+  print("right on");
+else: 
+  print("oh")
+
+
+
+
+
+
+
+
