@@ -96,6 +96,40 @@ else:
   print("oh")
 
 
+"cheese" in "cheeseshop" #true
+# in is a boolean
+
+#FOR LOOPS
+my_list = ["hello", "how", "are", "you"];
+
+for word in my_list:
+  print(word);
+
+alphabet = 'abcdefghijklmnopqrstuvwxyz';
+
+#for letter in alphabet:
+#  print(letter)
+
+#WHILE LOOPS
+start = 10;
+while start:
+  print(start);
+  start = start - 1;
+
+#INPUT
+age = input("Whats your name?");
+
+#FUNCTIONS
+def hows_the_parrot():
+  print("hey squak")
+
+hows_the_parrot();
+
+def average(num1, num2):
+  return (num1 + num2)/2;
+
+avg = average(1, 3);
+print(avg);
 
 
 
