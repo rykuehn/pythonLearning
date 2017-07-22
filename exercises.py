@@ -7,11 +7,11 @@ def name():
     
   except ValueError:
     print("That is not a number")
-  years = 100 - age
+    years = 100 - age
 
-  while numOfPrints > 0:
-    print("You will die in {} years \n".format(years))
-    numOfPrints = numOfPrints - 1
+    while numOfPrints > 0:
+      print("You will die in {} years \n".format(years))
+      numOfPrints = numOfPrints - 1
 
 #2 Ask the user for a number. Depending on whether the number is even or odd, print out an appropriate message to the user. Hint: how does an even / odd number react differently when divided by 2?
 
@@ -21,17 +21,31 @@ def odd_even():
     num2 = int(input("Pick a number"))
   except ValueError:
     print("That is not a number")
-  if num2 % 2 == 0 and num2 % num1 == 0:
-    print("{} is an even number".format(num2))
-    print("Yeah!")
-  elif num2 % 2 == 0:
-    print("{} is an even number".format(num2))
-  elif num2 % 2 == 1:
-    print("{} is an odd number".format(num2))
-  elif num2 % 4 == 0:
-    print("{} is a mulitple of four".format(num2))
+    if num2 % 2 == 0 and num2 % num1 == 0:
+      print("{} is an even number".format(num2))
+      print("Yeah!")
+    elif num2 % 2 == 0:
+      print("{} is an even number".format(num2))
+    elif num2 % 2 == 1:
+      print("{} is an odd number".format(num2))
+    elif num2 % 4 == 0:
+      print("{} is a mulitple of four".format(num2))
 
-# Extras:
+#3 write a program that prints out all the elements of the list that are less than 5.
+a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 
-# If the number is a multiple of 4, print out a different message.
-# Ask the user for two numbers: one number to check (call it num) and one number to divide by (check). If check divides evenly into num, tell that to the user. If not, print a different appropriate message.
+def lessThan5(list):
+  print([num for num in list if num < 5])
+
+
+
+
+
+
+
+
+
+
+
+
+
