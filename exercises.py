@@ -48,7 +48,19 @@ def divisors():
     if num % i == 0:
       print(i)
 
-divisors()
+#5 and write a program that returns a list that contains only the elements that are common between the lists (without duplicates). Make sure your program works on two lists of different sizes.
+
+import random
+
+#create random lists
+a = random.sample(range(25), 10)
+b = random.sample(range(25), 10)
+
+print(a, b)
+def list_overlap(x, y):
+  print(list(set([num for num in x if num in y])))
+
+
 
 
 
