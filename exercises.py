@@ -69,7 +69,15 @@ def is_palindrome(word):
     x+= word[len(word) - 1 - i]
   print(x == word)
 
-#is_palindrome("racecar")
+#7 Write one line of Python that takes this list a and makes a new list that has only the even elements of this list in it.
+
+sample = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+def only_evens(listItem):
+  print([num for num in listItem if num % 2 == 0])
+
+only_evens(sample)
+
+
 
 
 
