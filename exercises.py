@@ -44,9 +44,9 @@ def divisors():
     num = int(input("pick a number"));
   except ValueError:
     print("please enter a number")
-  for i in range(1, num + 1):
-    if num % i == 0:
-      print(i)
+    for i in range(1, num + 1):
+      if num % i == 0:
+        print(i)
 
 #5 and write a program that returns a list that contains only the elements that are common between the lists (without duplicates). Make sure your program works on two lists of different sizes.
 
@@ -67,7 +67,7 @@ def is_palindrome(word):
   x = ''
   for i in range(len(word)):
     x+= word[len(word) - 1 - i]
-  print(x == word)
+    print(x == word)
 
 #7 Write one line of Python that takes this list a and makes a new list that has only the even elements of this list in it.
 
@@ -78,9 +78,26 @@ def only_evens(listItem):
 #8 Make a two-player Rock-Paper-Scissors game. (Hint: Ask for player plays (using input), compare them, print out a message of congratulations to the winner, and ask if the players want to start a new game)
 
 def rock_paper_scissors():
-  try:
-    player1 = input("Rock, paper, or scissors").lower()
-    player2 = input("Rock, paper, or scissors").lower()
+  points = {'rock': 2, 'scissors': 1, 'paper': 0}
+
+  player1 = input("Player 1 pick: Rock, paper, or scissors ").lower()
+  player2 = input("Player 2 pick: Rock, paper, or scissors ").lower()
+
+  score1 = points[player1]
+  score2 = points[player2]
+
+  if player1 == 'paper' and player2 == 'rock':
+    print('player 1: {}, player 2: {}, player 1 wins!'.format(player1, player2))
+  elif player1 == 'rock' and player2 == 'paper':
+    print('player 1: {}, player 2: {}, player 2 wins!'.format(player1, player2))
+  elif score1 > score2:
+    print('player 1: {}, player 2: {}, player 1 wins!'.format(player1, player2))
+  elif score2 > score1:
+    print('player 1: {}, player 2: {}, player 2 wins!'.format(player1, player2))
+  else:
+    print("Tie")
+
+
 
 
 
