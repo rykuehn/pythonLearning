@@ -56,9 +56,21 @@ import random
 a = random.sample(range(25), 10)
 b = random.sample(range(25), 10)
 
-print(a, b)
 def list_overlap(x, y):
   print(list(set([num for num in x if num in y])))
+
+
+#6 Ask the user for a string and print out whether this string is a palindrome or not. (A palindrome is a string that reads the same forwards and backwards.)
+
+def is_palindrome(word):
+  #print(word == word[::-1]) 
+  x = ''
+  for i in range(len(word)):
+    x+= word[len(word) - 1 - i]
+  print(x == word)
+
+#is_palindrome("racecar")
+
 
 
 
