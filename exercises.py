@@ -75,9 +75,12 @@ sample = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 def only_evens(listItem):
   print([num for num in listItem if num % 2 == 0])
 
-only_evens(sample)
+#8 Make a two-player Rock-Paper-Scissors game. (Hint: Ask for player plays (using input), compare them, print out a message of congratulations to the winner, and ask if the players want to start a new game)
 
-
+def rock_paper_scissors():
+  try:
+    player1 = input("Rock, paper, or scissors").lower()
+    player2 = input("Rock, paper, or scissors").lower()
 
 
 
