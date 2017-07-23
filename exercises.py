@@ -96,8 +96,16 @@ def rock_paper_scissors():
     print('player 1: {}, player 2: {}, player 2 wins!'.format(player1, player2))
   else:
     print("Tie")
+  
+  playAgain = input('Would you like to play again?').lower()
+  
+  if playAgain == 'yes':
+    rock_paper_scissors();
+  else:
+    return;
 
 
+rock_paper_scissors()
 
 
 
