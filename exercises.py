@@ -101,11 +101,7 @@ def rock_paper_scissors():
   
   if playAgain == 'yes':
     rock_paper_scissors();
-  else:
-    return;
 
-
-rock_paper_scissors()
 
 
 
