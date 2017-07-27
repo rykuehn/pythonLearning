@@ -103,6 +103,24 @@ def rock_paper_scissors():
     rock_paper_scissors();
 
 
+#9 Generate a random number between 1 and 9 (including 1 and 9). Ask the user to guess the number, then tell them whether they guessed too low, too high, or exactly right.
+import random
+
+def high_low():
+  number = random.randint(1, 10)
+  try:
+    guess =  int(input("Pick a number between 1 - 10 : "))
+  except ValueError:
+    print("{} is not a number!".format(guess))
+  if guess > number:
+    print("Your guess is too high")
+  elif guess < number:
+    print("Your guess is too low")
+  else:
+    print("{} is exactly the same as {}".format(number, guess))
+
+
+
 
 
 
