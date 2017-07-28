@@ -119,6 +119,17 @@ def high_low():
   else:
     print("{} is exactly the same as {}".format(number, guess))
 
+#10 write a program that returns a list that contains only the elements that are common between the lists (without duplicates) using comprehensions.
+
+a = random.sample(range(25), 5)
+b = random.sample(range(25), 5)
+
+def common_in_lists(a, b):
+  print([num for num in a for num2 in b if num == num2])
+
+
+
+
 
 
 
