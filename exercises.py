@@ -39,14 +39,12 @@ def lessThan5(list):
 
 #4 Create a program that asks the user for a number and then prints out a list of all the divisors of that number. (If you don’t know what a divisor is, it is a number that divides evenly into another number. For example, 13 is a divisor of 26 because 26 / 13 has no remainder.)
 
-def divisors():
-  try:
-    num = int(input("pick a number"));
-  except ValueError:
-    print("please enter a number")
-    for i in range(1, num + 1):
-      if num % i == 0:
-        print(i)
+def divisors(num):
+  divisor_list = []
+  for i in range(1, num + 1):
+    if num % i == 0:
+      divisor_list.append(i)
+  return divisor_list
 
 #5 and write a program that returns a list that contains only the elements that are common between the lists (without duplicates). Make sure your program works on two lists of different sizes.
 
@@ -126,6 +124,20 @@ b = random.sample(range(25), 5)
 
 def common_in_lists(a, b):
   print([num for num in a for num2 in b if num == num2])
+
+#11 Ask the user for a number and determine whether the number is prime or not
+
+def is_prime():
+  try:
+    num = int(input("Give me a number"))
+  except ValueError:
+    print("not a number")
+  div = divisors(num)
+  if len(div) <= 2:
+    print("prime")
+  else:
+    print("not prime")
+
 
 
 
