@@ -138,6 +138,29 @@ def is_prime():
   else:
     print("not prime")
 
+#12 Write a program that takes a list of numbers (for example, a = [5, 10, 15, 20, 25]) and makes a new list of only the first and last elements of the given list.
+
+def first_last(listItem):
+  print([listItem[0], listItem[len(listItem) - 1]]);
+
+#13 Write a program that asks the user how many Fibonnaci numbers to generate and then generates them.
+
+def fib_return(num):
+  i = 1;
+  if num == 0:
+    fib = []
+  elif num == 1:
+    fib = [1]
+  elif num == 2:
+    fib = [1, 1]
+  else:
+    fib = [1, 1]
+    while i < num - 1:
+      fib.append(fib[i] + fib[i - 1])
+      i += 1
+  print(fib)
+
+
 
 
 
