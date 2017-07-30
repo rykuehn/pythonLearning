@@ -69,7 +69,7 @@ def is_palindrome(word):
 
 #7 Write one line of Python that takes this list a and makes a new list that has only the even elements of this list in it.
 
-sample = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+sample = [1, 4, 9, 16, 25, 36, 49, 64, 81, 81, 100]
 def only_evens(listItem):
   print([num for num in listItem if num % 2 == 0])
 
@@ -158,9 +158,11 @@ def fib_return(num):
     while i < num - 1:
       fib.append(fib[i] + fib[i - 1])
       i += 1
-  print(fib)
 
+#14 Write a program (function!) that takes a list and returns a new list that contains all the elements of the first list minus all the duplicates.
 
+def return_set(listItem):
+  print(list(set(listItem)));
 
 
 
