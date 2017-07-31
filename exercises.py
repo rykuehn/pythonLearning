@@ -165,11 +165,16 @@ def return_set(listItem):
   print(list(set(listItem)));
 
 
-
 #15 Write a program (using functions!) that asks the user for a long string containing multiple words. Print back to the user the same string, except with the words in backwards order. 
 
 def reverse_sentence(sentence):
   print(sentence.split()[::-1])
+
+reverse_sentence('Hello my name is R')
+#16 Write a password generator in Python.
+
+#def password_generator():
+
 
 
 
