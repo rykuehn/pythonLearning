@@ -170,11 +170,11 @@ def return_set(listItem):
 def reverse_sentence(sentence):
   print(sentence.split()[::-1])
 
-reverse_sentence('Hello my name is R')
 #16 Write a password generator in Python.
-
-#def password_generator():
-
+import string
+def password_generator():
+  chars=string.ascii_letters + string.digits + string.punctuation
+  print(''.join(random.sample(chars, 5)))
 
 
 
